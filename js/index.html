@@ -1,0 +1,68 @@
+<html lang=" en">
+<head>
+    <title>JS Example</title>
+</head>
+<body>
+        <h1 id="head">JS Example</h1>
+        <form method="post" action="abc.php" onsubmit="return f3()">
+            <input type="text" id="name" name="" value="" onblur="f2()" />
+            <input type="button" name="" value="Click" onclick="f2()"/>
+            <p id="msg"> </p>
+        </form>
+
+        <script>
+            //name = 'alamin';
+            //var name = 'alamin';
+            let name = 'alamin';
+            //std = [1, 'alamin', 3.5, 'alamin@aiub.edu'];
+            // if(){
+
+            // }else{
+
+            // }
+
+            // for(let i=0; i<10; i++){
+
+            // }
+
+            // function sum(a, b){
+            //     return a+b;
+            // }
+
+            // sum(a,b);
+
+            // let f1 = function(a, b){
+            //     return a+b;
+            // }
+            // f1();
+
+            // let f2 = (a, b)=>{
+            //    let c = a+b;
+            //    return c;
+            // };
+
+            console.log('Hello JS');
+            //alert('HEllo JS');
+            //document.write('test');
+            function f1(){
+                document.getElementsByTagName('h1')[0].innerHTML = 'test';
+            }
+
+            function f2(){
+                let name = document.getElementById('name').value;
+
+                if(name == ''){
+                    document.getElementById('msg').innerHTML = "Please type username!";
+                }else{
+                    document.getElementById('head').innerHTML  = name;
+                    document.getElementById('msg').innerHTML = "";
+                }
+                document.getElementById('msg').style.color = 'red';
+
+            }
+
+            
+            //f1();
+        </script>
+</body>
+</html>
